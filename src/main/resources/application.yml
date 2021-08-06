@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  context-path: /
+  encoding:
+    charset: UTF-8w
+    enabled: true
+    force: true
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.mndc.sta.model
+
+spring:
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/
+#    username: root
+#    password: koreait
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
